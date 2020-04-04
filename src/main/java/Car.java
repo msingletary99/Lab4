@@ -15,7 +15,7 @@ public class Car {
     public int speed;
 
     public void setSpeed(int speed) {
-        this.speed = 0;
+        this.speed = speed;
     }
 
     public int getSpeed() {
@@ -38,15 +38,15 @@ public class Car {
         return yearModel;
     }
 
-    public int acceleration() {
+    public int acceleration(int i) {
         speed = speed + 5;
-        System.out.println(speed);
+        System.out.println("A" + (i+1) +": " + speed);
         return speed;
     }
 
-    public int breaking() {
+    public int breaking(int j) {
         speed = speed - 5;
-        System.out.println(speed);
+        System.out.println("B" + (j+1) + ": " + speed);
         return speed;
     }
 

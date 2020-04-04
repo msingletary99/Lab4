@@ -22,16 +22,17 @@ public class Main {
         String make = keyboard.nextLine(); 
         myCar.setMake(make);
         
-        System.out.println("Please insert your average speed of travel.");
+        myCar.setSpeed(0);
+        System.out.println("Please insert your speed of travel.");
         int speed = keyboard.nextInt();
         myCar.setSpeed(speed);
 //        
         for(int i=0;i<5;i++){
-            myCar.acceleration();
+            myCar.acceleration(i);
         }
         
         for(int j=0;j<5;j++){
-            myCar.breaking();
+            myCar.breaking(j);
     }
         
     }
